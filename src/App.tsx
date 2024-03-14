@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState<number | null>(null);
 
   const handleClink = async (): Promise<void> => {
-    const data = await fetch("http://localhost:4000/");
+    const data = await fetch("http://37.200.70.86:4000/");
     const res: { cnt: number } = await data.json();
     setCount(res.cnt);
   };
